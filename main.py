@@ -4,25 +4,23 @@ from libs.doc2vecs import D2V
 from libs.handles import Handle
 from libs.trs import TR
 
+"""
+    環境ごとに書き換える $HOME配下
+"""
 ROOT_FILE_PATH = "../0512-results/**/*.json"
 
-def do():
+def create_model():
     file_paths = Handle.get_file_path(ROOT_FILE_PATH)
-    for file_path in file_paths:
-        print(file_path)
     tr_datas = TR.create_tr_data(file_paths)
     D2V.create_model(tr_datas, name="apt-get-install")
-    # from datetime import datetime
-    # current_time = datetime.now()
-    # current_time_str = current_time.strftime('%Y.%m.%d.%H.%M.%S')
-    # print(current_time_str)
-    # print(type(current_time_str))
     
-
+def create_index():
+    file_paths = Handle.get_file_path(ROOT_FILE_PATH)
+    tr_datas = TR.create_tr_data_to_json_file(file_paths)
 
 
 def main():
-    do()
+    create_index()
 
 
 if __name__ == "__main__":
