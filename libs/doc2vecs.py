@@ -15,5 +15,6 @@ class D2V(object):
             dm=dm,
             window=window
         )
-        model.save("./model/doc2vec.model")
+        model_name = "./model/{}:{}.model".format(current_time_str, name)
+        model.save(model_name)
         
