@@ -14,7 +14,8 @@ def main(args):
     
     print("src:", data[args[1]])
     print(model.docvecs[args[1]])
-    
+    print(type(model.docvecs[args[1]]))
+
     for cnt, item in enumerate(items):
         print(item)
         file_name = item[0].split(":")[0]
