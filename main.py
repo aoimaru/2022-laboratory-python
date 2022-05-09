@@ -1,8 +1,8 @@
 
 
-from lib.doc2vecs import D2V
-from lib.handles import Handle
-from lib.trs import TR
+from libs.doc2vecs import D2V
+from libs.handles import Handle
+from libs.trs import TR
 
 ROOT_FILE_PATH = "../0512-results/**/*.json"
 
