@@ -7,7 +7,7 @@ from gensim.models.doc2vec import Doc2Vec
 model = Doc2Vec.load("./model/2022.05.10.01.03.50:apt-get-install.model")
 
 def get_src_datas(file_name):
-    with open("../JSON/{}.json".format(file_name), mode="r") as f:
+    with open("../JSON-SUB/{}.json".format(file_name), mode="r") as f:
         data = json.load(f)
     command_keys = [command_key for command_key in data.keys()]
     src_data = dict()
@@ -35,7 +35,7 @@ def get_similars(contents):
         for similar in similars:
             command_key = similar[0]
             file_name = command_key.split(":")[0]
-            with open("../JSON/{}.json".format(file_name), mode="r") as f:
+            with open("../JSON-SUB/{}.json".format(file_name), mode="r") as f:
                 similar_contents = json.load(f)
             similar_data = {
                 "sim_commands": similar_contents[command_key],
@@ -51,7 +51,7 @@ def get_similars(contents):
     
 
 def to_json_file(file_name):
-    TO_FILE_PATH = "RES"
+    TO_FILE_PATH = "RES-SUB"
     src_datas = get_src_datas(file_name)
     for file_path, file_contents in src_datas.items():
         print(file_path)

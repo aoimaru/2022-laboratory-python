@@ -2,7 +2,7 @@ import json
 import sys
 import pprint
 
-ROOT_FILE_PATH = "RES"
+ROOT_FILE_PATH = "RES-SUB"
 
 def test(file_path):
     with open("{}/{}.json".format(ROOT_FILE_PATH, file_path), mode= "r") as f:
@@ -16,6 +16,10 @@ def test(file_path):
             print(sim_data)
         print()
     
+
+    print()
+    print()
+    print()
     for value in data.values():
         print(value["src_command"])
 

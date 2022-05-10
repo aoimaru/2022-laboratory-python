@@ -50,7 +50,7 @@ class TR(object):
                     tr_datas.update(tr_data)
             print(tr_datas)
             # ファイルパスはパッチ
-            TO_FILE_PATH = "JSON"
+            TO_FILE_PATH = "JSON-SUB"
             with open("{}/{}.json".format(TO_FILE_PATH, file_path), mode="w") as f:
                 json.dump(tr_datas, f, ensure_ascii=False)
     
