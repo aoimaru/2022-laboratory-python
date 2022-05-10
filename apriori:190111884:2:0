@@ -1,0 +1,31 @@
+     support                                           itemsets
+0   1.000000                                         (REDIRECT)
+1   1.000000                                             (echo)
+2   1.000000                                   (REDIRECT, echo)
+3   0.909091                           (REDIRECT, DOUBLE_QUATE)
+4   0.909091                               (echo, DOUBLE_QUATE)
+5   0.909091                     (REDIRECT, echo, DOUBLE_QUATE)
+6   0.909091                                     (DOUBLE_QUATE)
+7   0.727273                                   (REDIRECT, DULL)
+8   0.727273                                       (DULL, echo)
+9   0.727273                             (REDIRECT, DULL, echo)
+10  0.727273                                             (DULL)
+11  0.636364                               (DULL, DOUBLE_QUATE)
+12  0.636364                     (REDIRECT, DULL, DOUBLE_QUATE)
+13  0.636364                         (DULL, echo, DOUBLE_QUATE)
+14  0.636364               (REDIRECT, DULL, echo, DOUBLE_QUATE)
+15  0.454545  (REDIRECT, echo, /etc/ld.so.conf.d/caffe.conf,...
+16  0.454545       (/etc/ld.so.conf.d/caffe.conf, DOUBLE_QUATE)
+17  0.454545           (REDIRECT, /etc/ld.so.conf.d/caffe.conf)
+18  0.454545               (echo, /etc/ld.so.conf.d/caffe.conf)
+19  0.454545  (REDIRECT, /etc/ld.so.conf.d/caffe.conf, DOUBL...
+20  0.454545                     (/etc/ld.so.conf.d/caffe.conf)
+21  0.454545     (REDIRECT, echo, /etc/ld.so.conf.d/caffe.conf)
+22  0.454545  (echo, /etc/ld.so.conf.d/caffe.conf, DOUBLE_QU...
+23  0.363636  (CAFFE_ROOT/build/lib, DULL, /etc/ld.so.conf.d...
+24  0.363636         (CAFFE_ROOT/build/lib, DULL, DOUBLE_QUATE)
+25  0.363636  (DOUBLE_QUATE, DULL, /etc/ld.so.conf.d/caffe.c...
+26  0.363636  (DOUBLE_QUATE, /etc/ld.so.conf.d/caffe.conf, C...
+27  0.363636  (DULL, /etc/ld.so.conf.d/caffe.conf, CAFFE_ROO...
+28  0.363636             (CAFFE_ROOT/build/lib, REDIRECT, DULL)
+29  0.363636                 (CAFFE_ROOT/build/lib, DULL, echo)

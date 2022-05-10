@@ -1,0 +1,31 @@
+     support                                           itemsets
+0   0.272727                                          (HOR_TAB)
+1   0.272727                                          (apt-get)
+2   0.272727                                          (install)
+3   0.181818                         (docker-php-ext-configure)
+4   0.181818                  (docker-php-ext-configure, EQUAL)
+5   0.181818              (gd, docker-php-ext-configure, EQUAL)
+6   0.181818                                               (cd)
+7   0.181818                           (EQUAL, --with-jpeg-dir)
+8   0.181818    (gd, docker-php-ext-configure, --with-jpeg-dir)
+9   0.181818                                 (apt-get, install)
+10  0.181818                                        (gd, EQUAL)
+11  0.181818                       (gd, EQUAL, --with-jpeg-dir)
+12  0.181818  (docker-php-ext-configure, EQUAL, --with-jpeg-...
+13  0.181818                             (-y, apt-get, install)
+14  0.181818                              (gd, --with-jpeg-dir)
+15  0.181818                                               (gd)
+16  0.181818        (docker-php-ext-configure, --with-jpeg-dir)
+17  0.181818                     (gd, docker-php-ext-configure)
+18  0.181818                                            (EQUAL)
+19  0.181818                                      (-y, install)
+20  0.181818                                  (--with-jpeg-dir)
+21  0.181818  (gd, docker-php-ext-configure, EQUAL, --with-j...
+22  0.181818                                               (-y)
+23  0.181818                                      (-y, apt-get)
+24  0.090909  (vim-common, git, libdevmapper-dev, install, c...
+25  0.090909  (vim-common, libseccomp-dev, install, cmake, d...
+26  0.090909  (libsystemd-dev, vim-common, install, cmake, d...
+27  0.090909  (libsystemd-dev, libdevmapper-dev, libseccomp-...
+28  0.090909  (libdevmapper-dev, libseccomp-dev, cmake, liba...
+29  0.090909  (vim-common, libdevmapper-dev, libseccomp-dev,...

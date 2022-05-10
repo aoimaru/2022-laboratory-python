@@ -51,7 +51,7 @@ def get_similars(contents):
     
 
 def to_json_file(file_name):
-    TO_FILE_PATH = "RES-SUB"
+    TO_FILE_PATH = "../RES-SUB"
     src_datas = get_src_datas(file_name)
     for file_path, file_contents in src_datas.items():
         print(file_path)

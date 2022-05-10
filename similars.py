@@ -2,7 +2,7 @@ import json
 import sys
 import pprint
 
-ROOT_FILE_PATH = "RES-SUB"
+ROOT_FILE_PATH = "../RES-SUB"
 
 def test(file_path):
     with open("{}/{}.json".format(ROOT_FILE_PATH, file_path), mode= "r") as f:
