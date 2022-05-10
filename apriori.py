@@ -6,7 +6,7 @@ import pandas as pd
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori
 
-FILE_PATH = "../RES-SUB/190111884:1.json"
+FILE_PATH = "../RES-SUB/260798842:0.json"
 
 def get_contents():
     with open(FILE_PATH, mode="r") as f:
@@ -31,7 +31,7 @@ def get_commands(target):
     return commands
 
 def test():
-    TARGET = "190111884:1:0"
+    TARGET = "260798842:0:1"
     commands = get_commands(TARGET)
     # pprint.pprint(commands)
 
