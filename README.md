@@ -275,4 +275,16 @@
 
     以上!!!
 
+    ['apt-get', 'install', '-y', '--no-install-recommends', 'apt-transport-https', 'libxml2-dev', 'libcairo2-dev', 'libsqlite-dev', 'libmariadbd-dev', 'libmariadb-client-lgpl-dev', 'libpq-dev', 'libssh2-1-dev', 'libcurl4-openssl-dev', 'locales']
+    ['apt-get', 'install', '--no-install-recommends', '-y', 'gcc', 'git', 'openssh-client', 'less', 'libxtst-dev', 'libxext-dev', 'libxrender-dev', 'libfreetype6-dev', 'libfontconfig1', 'libgtk2.0-0', 'libxslt1.1', 'libxxf86vm1']
+    ['sudo', 'apt-get', 'install', '-q', '-y', 'cpanminus', 'vim', 'net-tools', 'git-email', 'telnet', 'screen', 'wget', 'less', 'curl', 'htop']
+    ['apt-get', 'install', '-y', 'gawk', 'make', 'python', 'gcc', 'gcc-multilib', 'gettext', 'texinfo']
+    ['apt-install', 'imagemagick', 'graphicsmagick', 'ghostscript', 'jpegoptim', 'libjpeg-turbo-progs', 'pngcrush', 'optipng', 'apngopt', 'pngnq', 'pngquant', 'libldap-2.4-2', 'libxslt1.1', 'zlibc', 'zlib1g', 'libpq5', 'libpng16-16', 'libmcrypt4', 'libzip4', 'libjpeg62-turbo-dev', 'libfreetype6-dev', 'libbz2-dev', 'libicu-dev', 'libldap2-dev', 'libldb-dev', 'libmcrypt-dev', 'libxml2-dev', 'libxslt1-dev', 'zlib1g-dev', 'libmemcached-dev', 'libpng-dev', 'libpq-dev', 'libzip-dev', 'libc-client-dev', 'libkrb5-dev']
+    ['apt-get', 'install', '-y', 'libsnappy-dev', 'zlib1g-dev', 'libbz2-dev', 'libyaml-dev', 'libltdl-dev', 'libtool']
+    ['apt-get', 'install', '-y', 'git', 'libyaml-dev', 'libssl-dev', 'libreadline-dev', 'libxml2-dev', 'libxslt1-dev', 'libffi-dev', 'build-essential']
+    ['apt-get', 'install', '-y', 'gawk', 'make', 'python', 'gcc', 'gcc-multilib', 'gettext', 'texinfo']
+    ['apt-get', 'install', '-y', 'libsnappy-dev', 'zlib1g-dev', 'libbz2-dev', 'libltdl-dev']
+    ['apt-install', 'zip', 'unzip', 'bzip2', 'moreutils', 'dnsutils', 'openssh-client', 'rsync', 'git', 'patch']
+    ['apt-get', 'install', '-y', 'vim', 'telnet', 'netcat', 'git-core', 'zip']
+
     ```
