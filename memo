@@ -1,0 +1,12 @@
+['apt-get', 'install', '-y', '--no-install-recommends', 'apt-transport-https', 'libxml2-dev', ...]
+
+['apt-get', 'install', '--no-install-recommends', '-y', 'gcc', 'git', 'openssh-client', 'less', ...]
+['sudo', 'apt-get', 'install', '-q', '-y', 'cpanminus', 'vim', 'net-tools', 'git-email', 'telnet', ...]
+['apt-get', 'install', '-y', 'gawk', 'make', 'python', 'gcc', 'gcc-multilib', 'gettext', 'texinfo']
+['apt-install', 'imagemagick', 'graphicsmagick', 'ghostscript', 'jpegoptim', 'libjpeg-turbo-progs', ...]
+['apt-get', 'install', '-y', 'libsnappy-dev', 'zlib1g-dev', 'libbz2-dev', 'libyaml-dev', 'libltdl-dev', 'libtool']
+['apt-get', 'install', '-y', 'git', 'libyaml-dev', 'libssl-dev', 'libreadline-dev', 'libxml2-dev', ...]
+['apt-get', 'install', '-y', 'gawk', 'make', 'python', 'gcc', 'gcc-multilib', 'gettext', 'texinfo']
+['apt-get', 'install', '-y', 'libsnappy-dev', 'zlib1g-dev', 'libbz2-dev', 'libltdl-dev']
+['apt-install', 'zip', 'unzip', 'bzip2', 'moreutils', 'dnsutils', 'openssh-client', 'rsync', 'git', 'patch']
+['apt-get', 'install', '-y', 'vim', 'telnet', 'netcat', 'git-core', 'zip']
