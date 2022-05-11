@@ -165,5 +165,55 @@
 * メモ
 - コマンド集
     ```bash
-    
+    DBOWモデルトDMPVモデルの作成
+    $ python3 main.py (ファイル内のD2Vのstaticmethoの引数を直接イジる)
+
+    DBOWモデルを用いた結果, 取得できたコマンドのみメモ
+    $ python3 create_res_file_dbow.py [ファイルのキー]
+    $ ex. python3 create_res_file_dbow.py 260798842 
+
+    内容例:
+    {
+    "190111884:1:0": {
+        "src_command": [
+            "git",
+            "clone",
+            "-b",
+            "DULL",
+            ...
+        ],
+        "similar_datas": [
+            {
+                "sim_commands": [
+                    "export",
+                    "PATH",
+                    "EQUAL",
+                    ...
+                ],
+                "sim_value": 0.76941978931427
+            },
+            {
+                "sim_commands": [
+                    "git",
+                    "clone",
+                    "--depth",
+                    "1",
+                    ...
+            },
+            {
+                "sim_commands": [
+                    "git",
+                    "clone",
+                    "https",
+                    "COLON",
+                    "//github.com/datacenter/acitoolkit"
+                ],
+                "sim_value": 0.7324718832969666
+            },
+    }
+
+    DMPVモデルを用いた結果
+
+
+
     ```
