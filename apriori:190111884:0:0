@@ -1,0 +1,51 @@
+     support                                           itemsets
+0   0.545455                                          (apt-get)
+1   0.363636                                           (update)
+2   0.363636                                  (update, apt-get)
+3   0.272727                                            (EQUAL)
+4   0.272727                                             (make)
+5   0.181818         (apt-get, DEBIAN_FRONTEND, noninteractive)
+6   0.181818   (update, DEBIAN_FRONTEND, noninteractive, EQUAL)
+7   0.181818  (apt-get, DEBIAN_FRONTEND, noninteractive, EQUAL)
+8   0.181818              (DULL, RIGHT_BRACKET3, LEFT_BRACKET3)
+9   0.181818                              (DULL, LEFT_BRACKET3)
+10  0.181818                             (DULL, RIGHT_BRACKET3)
+11  0.181818  (update, apt-get, noninteractive, DEBIAN_FRONT...
+12  0.181818                                   (apt-get, EQUAL)
+13  0.181818                   (update, DEBIAN_FRONTEND, EQUAL)
+14  0.181818                          (update, DEBIAN_FRONTEND)
+15  0.181818                            (noninteractive, EQUAL)
+16  0.181818                  (update, apt-get, noninteractive)
+17  0.181818                                    (update, EQUAL)
+18  0.181818                    (RIGHT_BRACKET3, LEFT_BRACKET3)
+19  0.181818                    (update, noninteractive, EQUAL)
+20  0.181818                           (update, noninteractive)
+21  0.181818                                    (make, install)
+22  0.181818                          (apt-get, noninteractive)
+23  0.181818                                   (apt-get, clean)
+24  0.181818                           (update, apt-get, EQUAL)
+25  0.181818  (update, apt-get, DEBIAN_FRONTEND, noninteract...
+26  0.181818          (update, apt-get, DEBIAN_FRONTEND, EQUAL)
+27  0.181818                  (DEBIAN_FRONTEND, noninteractive)
+28  0.181818                                            (clean)
+29  0.181818           (DEBIAN_FRONTEND, noninteractive, EQUAL)
+30  0.181818                  (apt-get, DEBIAN_FRONTEND, EQUAL)
+31  0.181818                 (update, apt-get, DEBIAN_FRONTEND)
+32  0.181818           (update, apt-get, noninteractive, EQUAL)
+33  0.181818          (update, DEBIAN_FRONTEND, noninteractive)
+34  0.181818                                  (DEBIAN_FRONTEND)
+35  0.181818                                             (DULL)
+36  0.181818                                    (LEFT_BRACKET3)
+37  0.181818                                   (RIGHT_BRACKET3)
+38  0.181818                         (apt-get, DEBIAN_FRONTEND)
+39  0.181818                   (apt-get, noninteractive, EQUAL)
+40  0.181818                           (DEBIAN_FRONTEND, EQUAL)
+41  0.181818                                          (install)
+42  0.181818                                   (noninteractive)
+43  0.090909  (-d, -q, unzip, LEFT_BRACKET3, /tmp/openhab.zi...
+44  0.090909  (-d, -q, unzip, LEFT_BRACKET3, /tmp/openhab.zi...
+45  0.090909  (-d, -q, LEFT_BRACKET3, /tmp/openhab.zip, ASTE...
+46  0.090909  (-d, -q, LEFT_BRACKET3, DOUBLE_QUATE, /tmp/ope...
+47  0.090909  (-d, -q, unzip, DOUBLE_QUATE, /tmp/openhab.zip...
+48  0.090909  (-d, -q, DOUBLE_QUATE, /tmp/openhab.zip, DULL,...
+49  0.090909  (-d, -q, unzip, /tmp/openhab.zip, DULL, RIGHT_...

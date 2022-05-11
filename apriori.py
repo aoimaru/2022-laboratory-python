@@ -6,7 +6,7 @@ import pandas as pd
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori
 
-FILE_PATH = "../RES-SUB/260798842:0.json"
+FILE_PATH = "../RES-SUB/190111884:0.json"
 
 def get_contents():
     with open(FILE_PATH, mode="r") as f:
@@ -31,7 +31,7 @@ def get_commands(target):
     return commands
 
 def test():
-    TARGET = "260798842:0:0"
+    TARGET = "190111884:0:0"
     commands = get_commands(TARGET)
     # pprint.pprint(commands)
 
@@ -47,7 +47,7 @@ def test():
                      low_memory = False,     # メモリ制限あり＆大規模なデータセット利用時に有効
                     )
     freq_items = freq_items.sort_values("support", ascending = False).reset_index(drop=True)
-    print(freq_items[:30])
+    print(freq_items[:50])
 
 
 def main():
