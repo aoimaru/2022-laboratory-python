@@ -4,7 +4,7 @@ import pprint
 
 from gensim.models.doc2vec import Doc2Vec
 
-model = Doc2Vec.load("./model/2022.05.10.01.03.50:apt-get-install.model")
+model = Doc2Vec.load("./model/2022.05.11.14.06.55:pv-dbow.model")
 
 def get_src_datas(file_name):
     with open("../JSON-SUB/{}.json".format(file_name), mode="r") as f:

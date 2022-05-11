@@ -31,7 +31,7 @@ def get_commands(target):
     return commands
 
 def test():
-    TARGET = "260798842:0:1"
+    TARGET = "260798842:0:0"
     commands = get_commands(TARGET)
     # pprint.pprint(commands)
 

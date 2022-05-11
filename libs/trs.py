@@ -54,4 +54,3 @@ class TR(object):
             with open("{}/{}.json".format(TO_FILE_PATH, file_path), mode="w") as f:
                 json.dump(tr_datas, f, ensure_ascii=False)
     
-    @staticmethod

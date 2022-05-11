@@ -29,3 +29,65 @@
 27  0.090909  (libsystemd-dev, libdevmapper-dev, libseccomp-...
 28  0.090909  (libdevmapper-dev, libseccomp-dev, cmake, liba...
 29  0.090909  (vim-common, libdevmapper-dev, libseccomp-dev,...
+     support                                         itemsets
+0   1.000000                               (apt-get, install)
+1   1.000000                           (-y, install, apt-get)
+2   1.000000                                             (-y)
+3   1.000000                                        (apt-get)
+4   1.000000                                    (-y, install)
+5   1.000000                                    (-y, apt-get)
+6   1.000000                                        (install)
+7   0.727273               (--no-install-recommends, install)
+8   0.727273  (--no-install-recommends, -y, install, apt-get)
+9   0.727273      (--no-install-recommends, apt-get, install)
+10  0.727273           (--no-install-recommends, -y, install)
+11  0.727273                    (--no-install-recommends, -y)
+12  0.727273                        (--no-install-recommends)
+13  0.727273           (--no-install-recommends, -y, apt-get)
+14  0.727273               (--no-install-recommends, apt-get)
+15  0.454545                                        (locales)
+16  0.454545                               (apt-get, locales)
+17  0.454545                               (locales, install)
+18  0.454545                                  (curl, apt-get)
+19  0.454545                                    (-y, locales)
+20  0.454545                         (curl, install, apt-get)
+21  0.454545                      (apt-get, locales, install)
+22  0.454545                     (curl, -y, install, apt-get)
+23  0.454545                                  (curl, install)
+24  0.454545                  (-y, locales, install, apt-get)
+25  0.454545                              (curl, -y, install)
+26  0.454545                           (-y, locales, install)
+27  0.454545                              (curl, -y, apt-get)
+28  0.454545                                           (curl)
+29  0.454545                                       (curl, -y)
+     support                                           itemsets
+0   0.272727                                          (HOR_TAB)
+1   0.272727                                          (apt-get)
+2   0.272727                                          (install)
+3   0.181818                         (docker-php-ext-configure)
+4   0.181818                  (EQUAL, docker-php-ext-configure)
+5   0.181818              (gd, EQUAL, docker-php-ext-configure)
+6   0.181818                                               (cd)
+7   0.181818                           (EQUAL, --with-jpeg-dir)
+8   0.181818    (gd, docker-php-ext-configure, --with-jpeg-dir)
+9   0.181818                                 (apt-get, install)
+10  0.181818                                        (gd, EQUAL)
+11  0.181818                       (gd, EQUAL, --with-jpeg-dir)
+12  0.181818  (EQUAL, docker-php-ext-configure, --with-jpeg-...
+13  0.181818                             (-y, apt-get, install)
+14  0.181818                              (gd, --with-jpeg-dir)
+15  0.181818                                               (gd)
+16  0.181818        (docker-php-ext-configure, --with-jpeg-dir)
+17  0.181818                     (gd, docker-php-ext-configure)
+18  0.181818                                            (EQUAL)
+19  0.181818                                      (-y, install)
+20  0.181818                                  (--with-jpeg-dir)
+21  0.181818  (gd, EQUAL, docker-php-ext-configure, --with-j...
+22  0.181818                                               (-y)
+23  0.181818                                      (-y, apt-get)
+24  0.090909  (libdevmapper-dev, bash-completion, dh-apparmo...
+25  0.090909  (bash-completion, dh-apparmor, dh-systemd, deb...
+26  0.090909  (build-essential, bash-completion, dh-apparmor...
+27  0.090909  (build-essential, libdevmapper-dev, bash-compl...
+28  0.090909  (libdevmapper-dev, bash-completion, dh-apparmo...
+29  0.090909  (libdevmapper-dev, bash-completion, dh-apparmo...
