@@ -15,6 +15,9 @@ class D2V(object):
             dm=dm,
             window=window
         )
-        model_name = "./model/{}:{}.model".format(current_time_str, name)
+        if dm==1:
+            model_name = "./model/DMPV/{}:{}.model".format(current_time_str, name)
+        else:
+            model_name = "./model/DBOW/{}:{}.model".format(current_time_str, name)
         model.save(model_name)
         
