@@ -12,7 +12,7 @@ ROOT_FILE_PATH = "../0512-results/**/*.json"
 def create_model():
     file_paths = Handle.get_file_path(ROOT_FILE_PATH)
     tr_datas = TR.create_tr_data(file_paths)
-    D2V.create_model(tr_datas, name="pv-dbow", dm=0)
+    D2V.create_model(tr_datas, name="dbow", dm=0)
     
 def create_index():
     file_paths = Handle.get_file_path(ROOT_FILE_PATH)

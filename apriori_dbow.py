@@ -1,14 +1,18 @@
 import json
 import pprint
+import sys
 
 import pandas as pd
 
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori
 
-FILE_PATH = "../RES-SUB/190111884:1-dmpv.json"
+# FILE_PATH = "../RES-SUB/190111884:1-dmpv.json"
+FILE_PATH = "../RES-SUB/DBOW/"
 
-def get_contents():
+def get_contents(target):
+    file_index, run_index, command_index = target.split(":")
+    target_index = "{}:{}".format(file_index, run_index)
     with open(FILE_PATH, mode="r") as f:
         data = json.load(f)
     return data
@@ -23,16 +27,16 @@ def get_sim_commands(data):
     return args
 
 def get_commands(target):
-    data = get_contents()
+    data = get_contents(target)
     src = data[target]
     src_command = get_src_command(src)
     sim_commands = get_sim_commands(src)
     commands = [src_command]+sim_commands
     return commands
 
-def test():
-    TARGET = "190111884:1:0"
-    commands = get_commands(TARGET)
+def test(target):
+    # TARGET = "190111884:1:0"
+    commands = get_commands(target)
     # pprint.pprint(commands)
 
     # データをテーブル形式に加工
@@ -50,11 +54,11 @@ def test():
     print(freq_items[:50])
 
 
-def main():
-    test()
+def main(args):
+    test(args[0])
 
 
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv)

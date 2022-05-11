@@ -4,7 +4,7 @@ import pprint
 
 from gensim.models.doc2vec import Doc2Vec
 
-model = Doc2Vec.load("./model/2022.05.10.01.03.50:apt-get-install.model")
+model = Doc2Vec.load("./model/2022.05.10.01.03.50:dmpy.model")
 
 def get_src_datas(file_name):
     with open("../JSON-SUB/{}.json".format(file_name), mode="r") as f:
@@ -51,12 +51,12 @@ def get_similars(contents):
     
 
 def to_json_file(file_name):
-    TO_FILE_PATH = "../RES-SUB"
+    TO_FILE_PATH = "../RES-SUB/DMPV"
     src_datas = get_src_datas(file_name)
     for file_path, file_contents in src_datas.items():
         print(file_path)
         dist_data = get_similars(file_contents)
-        with open("{}/{}.json".format(TO_FILE_PATH, file_path), mode="w") as f:
+        with open("{}/{}-dmpv.json".format(TO_FILE_PATH, file_path), mode="w") as f:
             json.dump(dist_data, f, ensure_ascii=False)
 
 

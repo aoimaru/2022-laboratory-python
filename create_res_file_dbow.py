@@ -4,7 +4,7 @@ import pprint
 
 from gensim.models.doc2vec import Doc2Vec
 
-model = Doc2Vec.load("./model/2022.05.11.14.06.55:pv-dbow.model")
+model = Doc2Vec.load("./model/2022.05.11.14.06.55:dbow.model")
 
 def get_src_datas(file_name):
     with open("../JSON-SUB/{}.json".format(file_name), mode="r") as f:
@@ -51,7 +51,7 @@ def get_similars(contents):
     
 
 def to_json_file(file_name):
-    TO_FILE_PATH = "../RES-SUB"
+    TO_FILE_PATH = "../RES-SUB/DBOW"
     src_datas = get_src_datas(file_name)
     for file_path, file_contents in src_datas.items():
         print(file_path)
