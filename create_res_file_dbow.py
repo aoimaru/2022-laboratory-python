@@ -57,7 +57,7 @@ def to_json_file(file_name):
         print(file_path)
         dist_data = get_similars(file_contents)
         with open("{}/{}.json".format(TO_FILE_PATH, file_path), mode="w") as f:
-            json.dump(dist_data, f, ensure_ascii=False)
+            json.dump(dist_data, f, ensure_ascii=False, indent=4)
 
 
 def main(args):

@@ -56,8 +56,8 @@ def to_json_file(file_name):
     for file_path, file_contents in src_datas.items():
         print(file_path)
         dist_data = get_similars(file_contents)
-        with open("{}/{}-dmpv.json".format(TO_FILE_PATH, file_path), mode="w") as f:
-            json.dump(dist_data, f, ensure_ascii=False)
+        with open("{}/{}.json".format(TO_FILE_PATH, file_path), mode="w") as f:
+            json.dump(dist_data, f, ensure_ascii=False, indent=4)
 
 
 def main(args):
