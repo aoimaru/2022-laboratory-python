@@ -172,6 +172,9 @@
     $ python3 create_res_file_dbow.py [ファイルのキー]
     $ ex. python3 create_res_file_dbow.py 260798842 
 
+    DMPVモデルでも同様
+    $ python3 create_res_file_dmpv.py [ファイルのキー]
+
     内容例:
     {
     "190111884:1:0": {
@@ -212,8 +215,24 @@
             },
     }
 
-    DMPVモデルを用いた結果
+    アソシエーション分析, DMPVでもDBOWでも一緒
+    $ python3 apriori_dbow.py [コマンドのキー]
+    $ python3 apriori_dbow.py 260798842:0:0
+    $ python3 apriori_dmpv.py 260798842:0:0
+    DMPV時間かかる.......
 
+    作成されるのは, aprioriの結果とそれに対応するコマンド集
 
+    内容例:
+    apriori結果:
+    ,support,itemsets
+    0,1.0,frozenset({'--depth'})
+    1,1.0,"frozenset({'-b', 'DULL', 'git', 'LEFT_BRACKET3', 'clone', 'CLONE_TAG', 'COLON'})"
+    2,1.0,"frozenset({'-b', 'DULL', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'https', 'clone', 'CLONE_TAG'})"
+    3,1.0,"frozenset({'-b', 'DULL', 'git', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'clone', 'CLONE_TAG'})"
+    4,1.0,"frozenset({'-b', 'git', 'RIGHT_BRACKET3', 'https', 'clone', 'CLONE_TAG', 'COLON'})"
+    5,1.0,"frozenset({'-b', 'git', 'LEFT_BRACKET3', 'https', 'clone', 'CLONE_TAG', 'COLON'})"
+    6,1.0,"frozenset({'-b', 'git', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'https', 'CLONE_TAG', 'COLON'})"
+    7,1.0,"frozenset({'-b', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'https', 'clone', 'CLONE_TAG', 'COLON'})"
 
     ```
