@@ -73,6 +73,7 @@ def test(target):
 
 
 def main(args):
+    print(args[1])
     test(args[1])
 
 
