@@ -235,4 +235,44 @@
     6,1.0,"frozenset({'-b', 'git', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'https', 'CLONE_TAG', 'COLON'})"
     7,1.0,"frozenset({'-b', 'LEFT_BRACKET3', 'RIGHT_BRACKET3', 'https', 'clone', 'CLONE_TAG', 'COLON'})"
 
+    対応コマンド結果:
+    {
+    "src_command": [
+        "git",
+        "clone",
+        "-b",
+        "DULL",
+        "LEFT_BRACKET3",
+        "CLONE_TAG",
+        "RIGHT_BRACKET3",
+        "--depth",
+        "1",
+        "https",
+        "COLON",
+        "//github.com/BVLC/caffe.git",
+        "."
+    ],
+    "dist_command": [
+        [
+            "git",
+            "clone",
+            "-b",
+            "DULL",
+            "LEFT_BRACKET3",
+            "CLONE_TAG",
+            "RIGHT_BRACKET3",
+            "--depth",
+            "1",
+            "https",
+            "COLON",
+            "//github.com/BVLC/caffe.git",
+            "."
+        ],
+        [
+            "git",
+            "clone",
+            ...
+
+    以上!!!
+
     ```
