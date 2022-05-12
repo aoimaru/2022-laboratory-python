@@ -69,4 +69,7 @@ def main(args):
 
 
 if __name__ == "__main__":
+    """
+        引数にはファイルのキー
+    """
     main(sys.argv)
